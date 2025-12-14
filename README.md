@@ -9,7 +9,7 @@ Professor:
 Aaron Nanas
 
 Introduction
-
+The RC Vehicle utilized UART, PWM, and GPIO.
 
 Background and Methodology
 
