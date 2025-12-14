@@ -1,5 +1,3 @@
-Introduction
-
 ECE 425 Microproccesor Systems
 
 Created by:
@@ -9,6 +7,13 @@ Created by:
 Professor:
 
 Aaron Nanas
+
+Introduction
+
+
+Background and Methodology
+
+
 
 The first thing I had to do was buy a toy car. The bottome components had to be removed 
 in order to create my own suspension. I needed to first create the suspension and place 
