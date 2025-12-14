@@ -1,25 +1,21 @@
-ECE 425 Microproccesor Systems
+## ECE 425 Microproccesor Systems
 
-Created by:
+### Created by:
 * Jonathan Penaloza 
 * Ricardo Zaragoza
 
-Professor:
+### Professor:
 
 Aaron Nanas
 
-Introduction
-The RC Vehicle utilized UART, PWM, and GPIO.
+## Introduction
+The RC Vehicle project utilized the TM4C123GH6PM that had the ability to control using UART. The RC vehcile was able to responds through commands through comp port.
 
-Background and Methodology
+## Background and Methodology
+The RC Vehicle utilized PWM, UART, and GPIO peripherals. With these peripherals, the page up arrow (^) was able to move the Rc forward, page down (V), RC car turn left using the servo (<), right (>), and space bar to stop the RC. TO revers the tires peripheral GPIO had to be utilized (PB6). Also, the ultra sonic sensor used GPIO using PC4 and PC5. 
 
 
-
-The first thing I had to do was buy a toy car. The bottome components had to be removed 
-in order to create my own suspension. I needed to first create the suspension and place 
-the tires in a proper form. Once the car was built the coding process began. 
-
-Project Descrpition
+## Project Descrpition
 The RC Vehicle was created using the built in UART of TM4C123GH6PM. With the UART
 the vehicle was able to respond commands using the arrows on the keyboard and stop
 using spacebar. 
@@ -30,14 +26,14 @@ using spacebar.
     * The servo motor was used for steering.
     * The ultra sonic sensor was confiugred to stop once it reached 10 cm.
 
-Block Diagram
+## Block Diagram
 
 <img width="356" height="318" alt="image" src="https://github.com/user-attachments/assets/2f66535d-798f-4c8d-8f3a-e477250ecb29" />
 
 
 
 
-Components Used
+## Components Used
 
 | Description     | Quantity     | Manufacturer   |
 |:---------       |:---------:   |-------:|
@@ -48,7 +44,7 @@ Components Used
 | Ultra Sonic Sensor| 1| EPLZON  | 
 
 
-Pinout
+## Pinout
 |Power Supply |Servo Motor | Motor Driver| TT Motor| Ultra Sonic Sensor| UART|
 | :-------    |:----------: |:---------: |:---------: |:--------: |:------:|
 |             |  PB4        |  PB7       |    PB7     |  PC4      |  PA0   |
@@ -59,9 +55,13 @@ Pinout
 
 
 
-Analysis and Results
+## Analysis and Results
 
 Video Link of the RC Vehicle: https://youtube.com/shorts/zyG-7bO7Igw?si=W-LZePn87dspoViG 
+
+![RC Vehicle](https://github.com/user-attachments/assets/8bc68034-513b-465c-aa87-8541679a223f)
+
+
 
 There were a few issues when moving forward on the project. For instance, when wiring the output of the stepper motor, I was giving constant voltage on the tt motors and could not find the reson why it would ignore the code commands and rotate the tires constantly as soon as the board was resetted. After a while I found out that the stepper motor has individual pins where the tt motors pins should be placed. In addition, once the vehicle was almost complete, we could not figure out why the ultra sonic sensor was not reacting when an object was facing in front of it. We found out that the sensor should be connected the 3.3 volts instead of 5 volts. 
 
